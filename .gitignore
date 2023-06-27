@@ -16,3 +16,5 @@
 .prettierignore
 README-OLD.md
 README-template.md
+style-guide.md
+/design
