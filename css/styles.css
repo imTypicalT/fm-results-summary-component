@@ -11,6 +11,7 @@ body p {
     color: hsla(0, 0%, 100%, 0.5);
 }
 
+/* RESULT BOX */
 .result-box {
     background-image: linear-gradient(
         to bottom,
@@ -19,7 +20,14 @@ body p {
     );
     padding: 10px;
     text-align: center;
+    border-bottom-left-radius: 8%;
+    border-bottom-right-radius: 8%;
 }
+.result-box p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/* CIRCLE */
 .score-cirlce {
     background-image: linear-gradient(
         to bottom,
@@ -33,14 +41,16 @@ body p {
     border-radius: 50%;
 }
 .score-cirlce h1 {
-    margin-bottom: 0;
+    margin: 0;
     padding-top: 25px;
     font-size: 400%;
 }
+
 .score-cirlce p {
     margin-top: 0px;
 }
 
+/* FOOTER */
 .attribution {
     font-size: 11px;
     text-align: center;
