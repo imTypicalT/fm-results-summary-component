@@ -1,3 +1,64 @@
 /* TODO: Basic body colors & fonts */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Hanken Grotesk", sans-serif;
+    color: hsla(0, 0%, 100%, 1);
+}
 
-/* TODO: Set up adaptive size for mobile - "mobile first mindset" */
+body p {
+    font-size: 18px;
+    color: hsla(0, 0%, 100%, 0.5);
+}
+
+.result-box {
+    background-image: linear-gradient(
+        to bottom,
+        hsl(252, 100%, 67%),
+        hsl(241, 81%, 54%)
+    );
+    padding: 10px;
+    text-align: center;
+}
+.score-cirlce {
+    background-image: linear-gradient(
+        to bottom,
+        hsla(256, 72%, 46%, 1),
+        hsla(241, 72%, 46%, 0)
+    );
+    height: 150px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+.score-cirlce h1 {
+    margin-bottom: 0;
+    padding-top: 25px;
+    font-size: 400%;
+}
+.score-cirlce p {
+    margin-top: 0px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* MOBILE VIEW */
+@media screen and (max-width: 575px) {
+    .mobile > div {
+        display: block;
+        background-color: lightblue;
+    }
+}
+
+/* div > div {
+    display: inline-block;
+    background-color: blue;
+    margin: 5px;
+} */
