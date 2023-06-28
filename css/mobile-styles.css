@@ -1,4 +1,4 @@
-/* TODO: Basic body colors & fonts */
+/* TODO: Basic body colors & fonts */ 
 html {
     box-sizing: border-box;
 }
@@ -22,6 +22,7 @@ body p {
     justify-content: center;
     align-items: center;
     margin: auto;
+    flex-direction: column;
 }
 /* RESULT BOX */
 .result-box {
@@ -113,4 +114,17 @@ body p {
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+/* MOBILE VIEW */
+@media screen and (max-width: 575px) {
+    body > div {
+        display: block;
+    }
+}
+
+/* div > div {
+    display: inline-block;
+    background-color: blue;
+    margin: 5px;
 }
