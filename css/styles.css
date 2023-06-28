@@ -1,16 +1,28 @@
 /* TODO: Basic body colors & fonts */
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: "Hanken Grotesk", sans-serif;
-    color: hsla(0, 0%, 100%, 1);
 }
 
 body p {
     font-size: 18px;
-    color: hsla(0, 0%, 100%, 0.5);
 }
-
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
 /* RESULT BOX */
 .result-box {
     background-image: linear-gradient(
@@ -20,12 +32,14 @@ body p {
     );
     padding: 10px;
     text-align: center;
+    color: hsla(0, 0%, 100%, 1);
     border-bottom-left-radius: 8%;
     border-bottom-right-radius: 8%;
 }
 .result-box p {
     margin-left: 10px;
     margin-right: 10px;
+    color: hsla(0, 0%, 100%, 0.5);
 }
 /* CIRCLE */
 .score-cirlce {
@@ -38,7 +52,7 @@ body p {
     width: 150px;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 50%;
+    border-radius: 100px;
 }
 .score-cirlce h1 {
     margin: 0;
@@ -50,6 +64,48 @@ body p {
     margin-top: 0px;
 }
 
+/* SUMMARY */
+.summary {
+    display: flex;
+    color: hsl(224, 30%, 27%);
+}
+.summary h3 {
+    padding-left: 30px;
+    margin-bottom: 45px;
+}
+.category {
+    margin-left: 50px;
+    margin-bottom: 45px;
+}
+/* ALIGN ICONS */
+.category img {
+    vertical-align: middle;
+}
+/* COLORS */
+.red {
+    color: hsl(0, 100%, 67%);
+}
+.yellow {
+    color: hsl(39, 100%, 56%);
+}
+.green {
+    color: hsl(166, 100%, 37%);
+}
+.blue {
+    color: hsl(234, 85%, 45%);
+}
+.lighter-text {
+    color: hsla(224, 30%, 27%, 0.5);
+}
+/* CONTINUE BUTTON */
+.big-button {
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+    width: 300px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 25px;
+}
 /* FOOTER */
 .attribution {
     font-size: 11px;
@@ -63,7 +119,6 @@ body p {
 @media screen and (max-width: 575px) {
     .mobile > div {
         display: block;
-        background-color: lightblue;
     }
 }
 
