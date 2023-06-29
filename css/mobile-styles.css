@@ -1,4 +1,4 @@
-/* TODO: Basic body colors & fonts */ 
+/* TODO: Basic body colors & fonts */
 html {
     box-sizing: border-box;
 }
@@ -9,6 +9,8 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
     font-family: "Hanken Grotesk", sans-serif;
@@ -18,11 +20,12 @@ body p {
     font-size: 18px;
 }
 .center {
-    display: flex;
     justify-content: center;
-    align-items: center;
-    margin: auto;
-    flex-direction: column;
+    /* align-items: center; */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    vertical-align: middle;
 }
 /* RESULT BOX */
 .result-box {
@@ -38,6 +41,7 @@ body p {
     border-bottom-right-radius: 8%;
 }
 .result-box p {
+    margin-top: 0px;
     margin-left: 10px;
     margin-right: 10px;
     color: hsla(0, 0%, 100%, 0.5);
@@ -67,21 +71,54 @@ body p {
 
 /* SUMMARY */
 .summary {
-    display: flex;
     color: hsl(224, 30%, 27%);
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-auto-rows: minmax(70px, auto);
+    margin-left: 20px;
+    margin-right: 20px;
+    align-items: center;
 }
 .summary h3 {
-    padding-left: 30px;
-    margin-bottom: 45px;
+    grid-column: 1;
+    grid-row: 1;
+    left: 30px;
+    margin: 0px;
+    /* margin-top: 20px; */
 }
-.category {
-    margin-left: 50px;
-    margin-bottom: 45px;
+.reaction {
+    grid-column: 1;
+    grid-row: 2;
 }
-/* ALIGN ICONS */
-.category img {
-    vertical-align: middle;
+.reaction-score {
+    grid-column: 3;
+    grid-row: 2;
 }
+.memory {
+    grid-column: 1;
+    grid-row: 3;
+}
+.memory-score {
+    grid-column: 3;
+    grid-row: 3;
+}
+.verbal {
+    grid-column: 1;
+    grid-row: 4;
+}
+.verbal-score {
+    grid-column: 3;
+    grid-row: 4;
+}
+.visual {
+    grid-column: 1;
+    grid-row: 5;
+}
+.visual-score {
+    grid-column: 3;
+    grid-row: 5;
+}
+
 /* COLORS */
 .red {
     color: hsl(0, 100%, 67%);
@@ -103,28 +140,18 @@ body p {
     background-color: hsl(224, 30%, 27%);
     color: hsl(0, 0%, 100%);
     width: 300px;
+    margin-top: 10px;
     padding-top: 15px;
     padding-bottom: 15px;
     border-radius: 25px;
 }
 /* FOOTER */
 .attribution {
+    padding-top: 10px;
     font-size: 11px;
     text-align: center;
+    color: hsl(220, 15%, 55%);
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
-}
-
-/* MOBILE VIEW */
-@media screen and (max-width: 575px) {
-    body > div {
-        display: block;
-    }
-}
-
-/* div > div {
-    display: inline-block;
-    background-color: blue;
-    margin: 5px;
 }
