@@ -47,7 +47,7 @@ body p {
     color: hsla(0, 0%, 100%, 0.5);
 }
 /* CIRCLE */
-.score-cirlce {
+.score-circle {
     background-image: linear-gradient(
         to bottom,
         hsla(256, 72%, 46%, 1),
@@ -59,13 +59,13 @@ body p {
     margin-right: auto;
     border-radius: 100px;
 }
-.score-cirlce h1 {
+.score-circle h1 {
     margin: 0;
     padding-top: 25px;
     font-size: 400%;
 }
 
-.score-cirlce p {
+.score-circle p {
     margin-top: 0px;
 }
 
