@@ -72,51 +72,50 @@ body p {
 /* SUMMARY */
 .summary {
     color: hsl(224, 30%, 27%);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.summary h3 {
+    margin-left: 1em;
+}
+.summary-info {
+    margin-left: 1em;
+    margin-right: 1em;
     display: grid;
     grid-template-columns: repeat(3, 2fr);
     grid-auto-rows: minmax(70px, auto);
-    margin-left: 20px;
-    margin-right: 20px;
-    align-items: center;
-}
-.summary h3 {
-    grid-column: 1;
-    grid-row: 1;
-    left: 30px;
-    margin: 0px;
-    /* margin-top: 20px; */
 }
 .reaction {
     grid-column: 1;
-    grid-row: 2;
+    grid-row: 1;
 }
 .reaction-score {
     grid-column: 3;
-    grid-row: 2;
+    grid-row: 1;
 }
 .memory {
     grid-column: 1;
-    grid-row: 3;
+    grid-row: 2;
 }
 .memory-score {
     grid-column: 3;
-    grid-row: 3;
+    grid-row: 2;
 }
 .verbal {
     grid-column: 1;
-    grid-row: 4;
+    grid-row: 3;
 }
 .verbal-score {
     grid-column: 3;
-    grid-row: 4;
+    grid-row: 3;
 }
 .visual {
     grid-column: 1;
-    grid-row: 5;
+    grid-row: 4;
 }
 .visual-score {
     grid-column: 3;
-    grid-row: 5;
+    grid-row: 4;
 }
 
 /* COLORS */
@@ -139,8 +138,8 @@ body p {
 .big-button {
     background-color: hsl(224, 30%, 27%);
     color: hsl(0, 0%, 100%);
-    width: 300px;
-    margin-top: 10px;
+    justify-content: center;
+    max-width: 300px;
     padding-top: 15px;
     padding-bottom: 15px;
     border-radius: 25px;
